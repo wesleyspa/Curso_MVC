@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>Submeter dados</h2>
+
+        @using (Html.BeginForm())
+        {                        
+            <div>
+                Dados <br />
+                Nome : @ViewData["nome"]<br />
+                Email : @ViewData["email"]<br />
+                Telefone : @ViewData["telefone"]<br />
+                Idade : @ViewData["idade"]<br />
+
+            </div>
+
+            <br />
+
+            <label for="nome">Nome :</label>
+            <input type="text" name="nome" />
+            <br />
+            <label for="email">Email :</label>
+            <input type="text" name="email" />
+            <br />
+            <label for="telefone">Telefone :</label>
+            <input type="text" name="telefone" />
+            <br />
+            <label for="idade">Idade :</label>
+            <input type="text" name="idade" />
+            <br />
+            <br />
+
+            <input type="submit" name="Enviar" />
+        }
+    </div>
+</body>
+</html>

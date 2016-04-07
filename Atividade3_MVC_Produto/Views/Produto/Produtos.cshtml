@@ -1,0 +1,29 @@
+﻿@model Atividade3_MVC_Produto.Models.Produto
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Produtos</title>
+</head>
+<body>
+    <div>
+        <label>ID Produto</label>
+        <br />
+        @Html.TextBoxFor(x => x.ProdutId)
+        <br />
+        <label>Nome do Produto</label>
+        <br />
+        @Html.TextBoxFor(x => x.Nome)
+        <br />
+        <label>Descrição do Produto</label>
+        <br />
+        @Html.TextBoxFor(x => x.Descricao)
+    </div>
+</body>
+</html>

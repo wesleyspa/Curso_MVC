@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Submit form with FormCollection";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm())
+        {
+            <div>
+                Dados: <br />
+                Nome : @ViewData["nome"]<br />
+                Email : @ViewData["email"]<br />
+                Telefone : @ViewData["telefone"]<br />
+                Idade : @ViewData["idade"]<br />
+
+            </div>
+        }
+    </div>
+</body>
+</html>
